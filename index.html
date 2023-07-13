@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Intelligent Video Light Checker</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Intelligent Video Light Checker</h1>
+    </header>
+    <main>
+      <div class="start-and-stop-btn">
+        <button id="start-btn">Check Your Light</button>
+        <button id="stop-btn">Stop</button>
+      </div>
+      <div class="main-container">
+        <div id="video-container">
+          <video id="video-feed" autoplay playsinline></video>
+        </div>
+        <div id="object-details">
+          <h2 id="Results-heading">Your Results</h2>
+          <div id="details-content">
+            <!-- Object details will be dynamically updated here -->
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@3.10.0/dist/tf.min.js"></script>
+
+    <script src="script.js"></script>
+  </body>
+</html>
